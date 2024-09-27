@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -48,17 +49,61 @@
   <ItemGroup>
     <Compile Include="ConexionBD.cs" />
     <Compile Include="Contacto.cs" />
-    <Compile Include="Diseño.cs" />
+    <Compile Include="frmCargarNuevoContacto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCargarNuevoContacto.Designer.cs">
+      <DependentUpon>frmCargarNuevoContacto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEliminarContacto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEliminarContacto.Designer.cs">
+      <DependentUpon>frmEliminarContacto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEliminarGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEliminarGrupo.Designer.cs">
+      <DependentUpon>frmEliminarGrupo.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmInicio.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmInicio.Designer.cs">
       <DependentUpon>frmInicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmModificarContacto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificarContacto.Designer.cs">
+      <DependentUpon>frmModificarContacto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificarGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificarGrupo.Designer.cs">
+      <DependentUpon>frmModificarGrupo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCargarNuevoContacto.resx">
+      <DependentUpon>frmCargarNuevoContacto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminarContacto.resx">
+      <DependentUpon>frmEliminarContacto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminarGrupo.resx">
+      <DependentUpon>frmEliminarGrupo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmInicio.resx">
       <DependentUpon>frmInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarContacto.resx">
+      <DependentUpon>frmModificarContacto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarGrupo.resx">
+      <DependentUpon>frmModificarGrupo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
