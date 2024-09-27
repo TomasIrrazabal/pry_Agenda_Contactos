@@ -65,9 +65,12 @@ namespace pry_Agenda_Contactos
                 if(c is GroupBox)
                 {
                     c.Visible = false;
-                    foreach(Control control in c.Controls)
+                    foreach(Control control in this.Controls)
                     {
-                        c.Enabled = false;
+                        if(control is TextBox)
+                        {
+                            c.Enabled = false;
+                        }
                     }
                 }
             }
@@ -122,6 +125,7 @@ namespace pry_Agenda_Contactos
                 if(contacto != null)
                 {   
                     gbInfoContacto.Visible = true;
+                    gbInfoContacto.Enabled = true;
                     txtNombre.Text = contacto.nombre;
                     txtGrupo.Text = contacto.grupo;
                     txtCorreo.Text = contacto.correo;

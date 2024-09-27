@@ -114,14 +114,14 @@
             // eliminarContactoToolStripMenuItem
             // 
             this.eliminarContactoToolStripMenuItem.Name = "eliminarContactoToolStripMenuItem";
-            this.eliminarContactoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eliminarContactoToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.eliminarContactoToolStripMenuItem.Text = "Eliminar Contacto";
             this.eliminarContactoToolStripMenuItem.Click += new System.EventHandler(this.eliminarContactoToolStripMenuItem_Click);
             // 
             // eliminarGrupoToolStripMenuItem
             // 
             this.eliminarGrupoToolStripMenuItem.Name = "eliminarGrupoToolStripMenuItem";
-            this.eliminarGrupoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eliminarGrupoToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.eliminarGrupoToolStripMenuItem.Text = "Eliminar Grupo";
             this.eliminarGrupoToolStripMenuItem.Click += new System.EventHandler(this.eliminarGrupoToolStripMenuItem_Click);
             // 
@@ -143,6 +143,7 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
+            this.lblNombre.ForeColor = System.Drawing.Color.White;
             this.lblNombre.Location = new System.Drawing.Point(6, 16);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(47, 13);
@@ -152,6 +153,7 @@
             // lblGrupo
             // 
             this.lblGrupo.AutoSize = true;
+            this.lblGrupo.ForeColor = System.Drawing.Color.White;
             this.lblGrupo.Location = new System.Drawing.Point(6, 61);
             this.lblGrupo.Name = "lblGrupo";
             this.lblGrupo.Size = new System.Drawing.Size(39, 13);
@@ -168,6 +170,7 @@
             // lblCorreo
             // 
             this.lblCorreo.AutoSize = true;
+            this.lblCorreo.ForeColor = System.Drawing.Color.White;
             this.lblCorreo.Location = new System.Drawing.Point(6, 112);
             this.lblCorreo.Name = "lblCorreo";
             this.lblCorreo.Size = new System.Drawing.Size(41, 13);
@@ -184,6 +187,7 @@
             // lblNumero
             // 
             this.lblNumero.AutoSize = true;
+            this.lblNumero.ForeColor = System.Drawing.Color.White;
             this.lblNumero.Location = new System.Drawing.Point(6, 161);
             this.lblNumero.Name = "lblNumero";
             this.lblNumero.Size = new System.Drawing.Size(47, 13);
@@ -199,6 +203,7 @@
             // 
             // gbInfoContacto
             // 
+            this.gbInfoContacto.BackColor = System.Drawing.Color.White;
             this.gbInfoContacto.Controls.Add(this.txtGrupo);
             this.gbInfoContacto.Controls.Add(this.txtNombre);
             this.gbInfoContacto.Controls.Add(this.lblNombre);
@@ -207,6 +212,7 @@
             this.gbInfoContacto.Controls.Add(this.txtNumero);
             this.gbInfoContacto.Controls.Add(this.txtCorreo);
             this.gbInfoContacto.Controls.Add(this.lblCorreo);
+            this.gbInfoContacto.ForeColor = System.Drawing.Color.White;
             this.gbInfoContacto.Location = new System.Drawing.Point(175, 27);
             this.gbInfoContacto.Name = "gbInfoContacto";
             this.gbInfoContacto.Size = new System.Drawing.Size(186, 210);
